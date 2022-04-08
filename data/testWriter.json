@@ -1,0 +1,12 @@
+{"accounts": [
+    {
+        "reward points": 10,
+        "balance": 1000,
+        "name": "dhrubo"
+    },
+    {
+        "reward points": 20,
+        "balance": 100,
+        "name": "batman"
+    }
+]}
