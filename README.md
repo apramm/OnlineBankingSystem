@@ -83,7 +83,6 @@ when a user creates an account and perform any specified transaction on that. Wh
 class in the model.
 
 ***
-**Phase 4: Task 3**
 
 *REFLECTION*
 
