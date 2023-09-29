@@ -1,7 +1,7 @@
-# Personal Project - Online Banking System
+# Online Banking System <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" /></a>
 
-#### *"All the banking operations on your fingertips"*
-**WHAT'S THE SYSTEM ABOUT? & WHY DID THAT INTEREST ME?**
+#### *"All the banking operations on your fingertips"* 
+**Purpose**
 
 I've always interested in finance and how the online banking came into existence with just double variables and evolved 
 to the complex reward points card with cashback provided to it's customer in a form of hook to their services.
@@ -9,39 +9,29 @@ This inspired me to create an Online Banking System, giving an option to the cus
 and later view all the information of different bank accounts as a list.Not only that the Online Banking System also 
 enables them to perform banking operations on their fingertips through technology.
 
+[UML DESIGN DIAGRAM ](https://github.com/apramm/OnlineBankingSystem/blob/main/UML_Design_Diagram.pdf) 
+
 **User Story:**
 
-1. As a user I would like to, *Add* my bank account's information like name, balance into the model.
-2. As a user I would like to, view the Information of *Arbitrary* List of different types of Accounts created. 
-3. As a user I would like to, have the reminder option to **save** the banking account information in app before 
-quitting.
-4. As a user I would like to, have an option to **load** the account state that was saved and use it again.
-5. As a user I would like to, perform smooth transactions; credit or debit from the account (active balance should not
-be below 0)
-6. As a user I would like to, transfer between different type of accounts. 
-7. As a user I would like to, have **multiple** types of Accounts in the bank. 
-8. As a user I would like to, have the initial balance in savings and a minimum balance in other accounts.
+1. Add my bank account's information like name, balance into the model.
+2. View the Information of *Arbitrary* List of different types of Accounts created. 
+3. Save the banking account information in app before quitting.
+4. Load the account state that was saved and use it again.
+5. Perform smooth transactions (credit or debit) on the account without worrying about edge cases.
+6. Transfer between different type of accounts. 
+7. Ability to have Multiple types of Accounts in the bank. 
+8. Have a minimum initial balance in savings and other accounts.
 
-Bonus Award! of reward points for every dollar spent. Automatically provided with cashback of 5 $ after
-  reaching 1000 reward points.
-
-(Sources : Teller App (in lecture-lab), Lab4-FoodServices Card, JsonSerializationDemo, 
-
-  Basics From - https://www.youtube.com/watch?v=Kmgo00avvEw&t=3994s 
-
-  Swing GUI - https://www.youtube.com/watch?v=KOI1WbkKUpQ 
-
-  Button - https://docs.oracle.com/javase/tutorial/uiswing/components/button.html
-
-  Alarm System(Event/EventLog) - https://github.students.cs.ubc.ca/CPSC210/AlarmSystem.git 
-)
 
 *** ***
 
-**Phase 4: Task 2**
+**CONSOLE LOG**
 
-*Representation of what gets log:* 
+We log three key events that happen in the Banking System which are Account Created > Debit > Credit. These tell us
+when a user creates an account and perform any specified transaction on that. Which is done using the Event and EventLog
+class in the model.
 
+```bash
 Thu Mar 31 14:29:34 PDT 2022
 
 Added apram to List
@@ -77,14 +67,10 @@ Added any to List
 Thu Mar 31 14:30:12 PDT 2022
 
 Added any to List
-
-We log three key events that happen in the Banking System which are Account Created > Debit > Credit. These tell us
-when a user creates an account and perform any specified transaction on that. Which is done using the Event and EventLog
-class in the model.
-
+```
 ***
 
-*REFLECTION*
+**REFLECTION**
 
 
 Through this project I was able to understand how banks like Scotia, CIBC, RBC work and perform various functions
@@ -106,12 +92,20 @@ runs that class.
 - Taking a look at the logging function of the system: we see that Event, EventLog and Iterable are the classes which
   perform the logging of account creation, credit, debit to increase the effectivity of the project. They apply directly
   on the Model classes to log the particular event that happens in the system and later print in console on quitting.
-
-*REFACTORING*
+***
+**REFACTORING**
 
 If I had more time to do the project I will definitely 
 - Focus more on the aesthetics of the project
 - In my credit and debit functions, I would improve them by having some more known exceptions.
 - I would also improve the exisitng Saving, Banking and Investment account type by allowing the user to choose 
 any of them.
-- Additionally, if there was a security page for login then that would've made the app much more safe. 
+- Additionally, if there was a security page for login then that would've made the app much more safe.
+
+***
+
+  **SOURCES :**
+
+* <a href = "https://www.youtube.com/watch?v=KOI1WbkKUpQ">Swing GUI </a> 
+* <a href = "https://docs.oracle.com/javase/tutorial/uiswing/components/button.html"> Button </a>
+* <a href = "https://github.students.cs.ubc.ca/CPSC210/AlarmSystem.git "> Event/EventLog</a>
